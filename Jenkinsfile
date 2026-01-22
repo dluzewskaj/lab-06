@@ -11,8 +11,6 @@ pipeline {
                 sh '''
                 wget https://releases.hashicorp.com/terraform/1.5.6/terraform_1.5.6_linux_amd64.zip
                 unzip -o terraform_1.5.6_linux_amd64.zip
-                id 
-                jenkins ALL=(ALL) NOPASSWD: ALL
                 sudo mv terraform /usr/local/bin/
                 terraform --version
                 '''
